@@ -5,6 +5,7 @@ const minifier = require('gulp-clean-css');
 const rename = require('gulp-rename');
 const autoprefixer = require('gulp-autoprefixer');
 
+
 function cleanCss() {
   return src('dist/*.css', { read: false})
     .pipe(clean());
@@ -14,7 +15,7 @@ function minifyCss() {
   return src('dist/*.css')
     .pipe(minifier())
     .pipe(rename({ extname: '.min.css'}))
-    .pipe(dest('dist/'))
+    .pipe(dest('dist/'));
 };
 
 function autoprefixCss() {
