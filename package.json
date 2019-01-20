@@ -1,9 +1,10 @@
 {
   "name": "frontend-scaffolding",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev": "gulp dev",
     "build": "gulp build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
